@@ -109,6 +109,7 @@ minRows(myArray);
 
 //Задача 58: Задайте две матрицы. Напишите программу, которая будет находить произведение двух матриц.
 
+/*
 int [,] CreateArray(int rows, int columns)
 {   
     int[,] array = new int[rows, columns];
@@ -131,12 +132,12 @@ void ShowMatrix(int[,] array)
 
 int [,] multiMatrix (int[,] array, int[,] array2)
 {
-int [,] arrayC = new int[array.GetLength(0), array2.GetLength(1)];
-for(int i = 0; i < array.GetLength(0); i++)
+    int [,] arrayC = new int[array.GetLength(0), array2.GetLength(1)];
+    for(int i = 0; i < array.GetLength(0); i++)
     {
-        for(int j = 0; j < array.GetLength(1); j++)
+        for(int j = 0; j < array2.GetLength(1); j++)
         {
-            for(int k = 0; k < array2.GetLength(0); k++)
+            for(int k = 0; k < array.GetLength(1); k++)
             {
                 {
                     arrayC[i,j] += array [i,k] * array2 [k,j];
@@ -144,7 +145,7 @@ for(int i = 0; i < array.GetLength(0); i++)
             }
         }
     }
-return arrayC;
+    return arrayC;
 }
 
 Console.Write("Input a number of rows matrix №1: ");
@@ -172,7 +173,12 @@ else
     int[,] myArray3 = multiMatrix(myArray,myArray2);
     ShowMatrix(myArray3);
 }
+*/
 
 //Задача 60. Сформируйте трёхмерный массив из неповторяющихся двузначных чисел. Напишите программу, которая будет построчно выводить массив, добавляя индексы каждого элемента.
+
+
+
+
 //Задача 62. Напишите программу, которая заполнит спирально массив 4 на 4. 
 //любой массив.
