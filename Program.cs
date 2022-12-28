@@ -177,8 +177,67 @@ else
 
 //Задача 60. Сформируйте трёхмерный массив из неповторяющихся двузначных чисел. Напишите программу, которая будет построчно выводить массив, добавляя индексы каждого элемента.
 
+/*
+void show3DArray(int[,,] array)
+{
+    Console.WriteLine();
+    for(int k = 0; k < array.GetLength(2); k++)
+    {
+        for(int i = 0; i < array.GetLength(0); i++)
+        {
+            for(int j = 0; j < array.GetLength(1); j++)
+            Console.Write($"{array[i,j,k]}({i},{j},{k}) ");
+            Console.WriteLine(" ");
+        }
+    }
+    Console.WriteLine();
+}
 
+int[] Array1D()
+{
+    int[]array = new int[100];
+    for (int i = 10; i < array.Length; i++)
+        {
+        array[i] = i;
+        }
+    return array;
+}  
 
+void ShowArray(int[] array) // Для проверки одномерного массива.
+{
+    for (int i = 10;i < array.Length;i++ )
+    {
+        Console.Write(array[i]+" ");
+    }
+}
+
+int [,,] Array3D(int[] arrayOne, int rows, int columns, int z)
+{  
+    int[,,] array = new int[rows, columns,z];
+    for(int i = 0,n=10; i < rows; i++)
+    {
+        for(int j = 0; j < columns; j++)
+        {
+            for(int k = 0; k < z; k++)
+            array[i,j,k] = arrayOne[n++];
+        }
+    }
+    return array;
+}
+
+Console.Write("Input a number of rows: ");
+int rows = Convert.ToInt32(Console.ReadLine());
+
+Console.Write("Input a number of columns: ");
+int columns = Convert.ToInt32(Console.ReadLine());
+
+Console.Write("Input a number of z: ");
+int z = Convert.ToInt32(Console.ReadLine());
+
+int[] myArray = Array1D();
+int[,,] myArray3D = Array3D(myArray, rows, columns, z);
+show3DArray(myArray3D);
+*/
 
 //Задача 62. Напишите программу, которая заполнит спирально массив 4 на 4. 
 //любой массив.
